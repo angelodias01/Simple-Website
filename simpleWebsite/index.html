@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="preload" as="style" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	  <link rel="icon" href="images/logo.png">
+
+    <title>Quiz</title>
+  </head>
+  <body id="back">
+    <header role="banner" class="ui-section-header">
+      <div class="ui-layout-container" >
+        <div class="ui-section-header__layout ui-layout-flex">
+          
+          <div class="navbar" style="text-align: center; align-items: center;">
+            <a role="link" aria-label="#">
+              <img src="images/logo.png" style="height: 28px; width: 28px;scale: 1; ">
+            </a>
+            <a href="#features" >Features</a>
+            <a href="#aboutUs" >About Us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <section class="ui-section-feature" id="Features">
+        <div class="ui-layout-container">
+          <h2>Some Features On Our Website!</h2>
+          
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="images/background.jpg" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem Ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quos alias quaerat. Saepe id expedita nulla quas deleniti quo hic veniam aut, delectus, corporis odit commodi animi cupiditate quasi facere.</p>
+            </div>
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="images/background.jpg" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem Ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quos alias quaerat. Saepe id expedita nulla quas deleniti quo hic veniam aut, delectus, corporis odit commodi animi cupiditate quasi facere.</p>
+            </div>
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="images/background.jpg" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem Ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quos alias quaerat. Saepe id expedita nulla quas deleniti quo hic veniam aut, delectus, corporis odit commodi animi cupiditate quasi facere.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ui-section-feature" id="aboutUs">
+        <div class="ui-layout-container">
+          <h2>Some Information about us!</h2>
+          
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-3">
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="images/background.jpg" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem Ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quos alias quaerat. Saepe id expedita nulla quas deleniti quo hic veniam aut, delectus, corporis odit commodi animi cupiditate quasi facere.</p>
+            </div>
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="images/background.jpg" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem Ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quos alias quaerat. Saepe id expedita nulla quas deleniti quo hic veniam aut, delectus, corporis odit commodi animi cupiditate quasi facere.</p>
+            </div>
+            <div class="ui-component-card ui-layout-column-4">
+              <img src="images/background.jpg" loading="lazy" alt="#" class="ui-component-card--image">
+              <h4 class="ui-component-card--title">Lorem Ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quos alias quaerat. Saepe id expedita nulla quas deleniti quo hic veniam aut, delectus, corporis odit commodi animi cupiditate quasi facere.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer role="contentinfo" class="ui-section-footer">
+      <div class="ui-layout-container">
+        <div class="ui-section-footer__layout ui-layout-flex">
+          
+          <p class="ui-section-footer--copyright ui-text-note"><small>&copy; Simple Website</small></p>
+          
+          <a href="#back" role="link" aria-label="#" class="ui-text-note"><small>Go to top</small></a>
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Help</small></a>
+          <a href="#" role="link" aria-label="#" class="ui-text-note"><small>Terms</small></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      
+      event.preventDefault();
+      
+      var hash = this.hash;
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+       
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+  </body>
+</html>
